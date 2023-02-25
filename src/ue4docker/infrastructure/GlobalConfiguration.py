@@ -5,7 +5,7 @@ from urllib.request import urlopen
 import json
 
 # The default namespace for our tagged container images
-DEFAULT_TAG_NAMESPACE = "adamrehn"
+DEFAULT_TAG_NAMESPACE = "wsj0000"
 
 
 class GlobalConfiguration(object):

@@ -62,3 +62,5 @@ ARG VISUAL_STUDIO_BUILD_NUMBER
 RUN powershell -ExecutionPolicy Bypass -File C:\install-prerequisites.ps1 %VISUAL_STUDIO_BUILD_NUMBER%
 
 RUN powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-TimeZone -Id 'China Standard Time'"
+
+RUN powershell -NoProfile -ExecutionPolicy Bypass -Command 'Set-ItemProperty -Path "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FileSystem" -Name "LongPathsEnabled" -Value 1'
